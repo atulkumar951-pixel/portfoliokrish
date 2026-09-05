@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishna — CSE Student &amp; Developer</title>
+
+  <!-- ✏️ UPDATE: description shown on Google search results -->
+  <meta name="description" content="Portfolio of Krishna — B.Tech CSE student and Web Developer skilled in HTML, CSS, JavaScript, Python and Django." />
+  <meta name="author" content="Krishna" />
+
+  <!-- ✏️ UPDATE: favicon emoji (icon on the browser tab) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Poppins:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Thin gradient progress bar at the very top -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ════════════════════ NAVBAR ════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">Krishna<span class="logo-dot">.dev</span></a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#certificates" class="nav-link">Certificates</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <!-- ✏️ UPDATE: resume file name once you add your real PDF -->
+        <a href="assets/resume/Krishna_Resume.pdf" download class="btn btn-sm btn-gradient nav-resume">Resume</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ════════════════════ HERO / HOME ════════════════════ -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="grid-overlay"></div>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <p class="hero-greeting reveal">👋 Hello, I am</p>
+          <!-- ✏️ UPDATE: your full name -->
+          <h1 class="hero-name reveal">Krishna</h1>
+          <h2 class="hero-role reveal">
+            <span class="type-text" id="typing"></span><span class="type-cursor">|</span>
+          </h2>
+          <p class="hero-desc reveal">
+            A B.Tech <strong>Computer Science &amp; Engineering</strong> student who loves building
+            clean, responsive websites and real-world applications with
+            <strong>Python, Django &amp; JavaScript</strong>.
+            <!-- ✏️ UPDATE: write your own 2-3 line intro here -->
+          </p>
+          <div class="hero-buttons reveal">
+            <a href="assets/resume/Krishna_Resume.pdf" download class="btn btn-gradient">📄 Download Resume</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+          <div class="hero-socials reveal">
+            <!-- ✏️ UPDATE: your GitHub profile link -->
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 2.87-.39c.97 0 1.94.13 2.87.39 2.18-1.49 3.14-1.18 3.14-1.18.63 1.59.24 2.76.12 3.05.73.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.66.41.36.78 1.06.78 2.14v3.16c0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a>
+            <!-- ✏️ UPDATE: your LinkedIn profile link -->
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.79-1.75-1.75s.79-1.75 1.75-1.75 1.75.79 1.75 1.75 1.75-.78 1.75-1.75 1.75zm13.5 12.27h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-11h2.88v1.5h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.6v6.46z"/></svg></a>
+          </div>
+        </div>
+
+        <!-- right visual: avatar with rotating gradient ring + floating badges -->
+        <div class="hero-visual reveal">
+          <div class="avatar-ring">
+            <div class="avatar-ring-inner">
+              <div class="avatar-wrap">
+                <!-- ✏️ UPDATE: replace assets/profile/photo.jpg with your real photo -->
+                <img src="assets/profile/photo.jpeg" alt="Krishna — profile photo" class="avatar-img"
+                     onerror="this.parentElement.classList.add('no-photo')" />
+                <span class="avatar-fallback">K</span>
+              </div>
+            </div>
+          </div>
+          <span class="float-badge badge-1">🌐 HTML · CSS · JS</span>
+          <span class="float-badge badge-2">🐍 Python · Django</span>
+          <span class="float-badge badge-3">⚡ Problem Solver</span>
+        </div>
+
+      </div>
+
+      <a href="#about" class="scroll-down" aria-label="Scroll down to About"><span></span></a>
+    </section>
+
+    <!-- ════════════════════ ABOUT ════════════════════ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">👨‍💻 About Me</span>
+          <h2 class="section-title">Get to know <span class="gradient-text">me</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-photo reveal">
+            <div class="about-photo-frame">
+              <!-- ✏️ UPDATE: same photo as the hero (assets/profile/photo.jpeg) -->
+              <img src="assets/profile/photo.jpeg" alt="My photo"
+                   onerror="this.style.display='none'" />
+              <span class="about-photo-emoji">👨‍💻</span>
+            </div>
+            <div class="about-photo-card">
+              <strong>Krishna</strong>
+              <span>B.Tech · CSE</span>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <h3 class="about-heading reveal">A passionate CSE student who loves turning ideas into real products 💡</h3>
+            <!-- ✏️ UPDATE: write a short intro (2-3 lines) about yourself -->
+            <p class="about-p reveal">
+              I'm a final-year B.Tech Computer Science &amp; Engineering student with a Diploma in
+              Computer Engineering. I enjoy building clean, responsive web applications and solving
+              interesting problems with code.
+            </p>
+            <p class="about-p reveal">
+              My core stack is <strong>Python + Django</strong> on the backend and
+              <strong>HTML, CSS &amp; JavaScript</strong> on the frontend. I'm always exploring
+              new tools, contributing to projects, and sharpening my DSA &amp; problem-solving skills.
+            </p>
+
+            <!-- ✏️ UPDATE: your email, phone and location -->
+            <ul class="about-facts reveal">
+              <li>🖥️ <span>Degree</span> B.Tech — Computer Science &amp; Engineering</li>
+              <li>📧 <span>Email</span> your.email@gmail.com</li>
+              <li>📱 <span>Phone</span> +91 99999 99999</li>
+              <li>📍 <span>Location</span> India</li>
+              <li>🌐 <span>Languages</span> English, Hindi</li>
+              <li>💼 <span>Status</span> Open to internships</li>
+            </ul>
+
+            <div class="about-actions reveal">
+              <a href="#contact" class="btn btn-gradient">Let's Talk</a>
+              <a href="assets/resume/Krishna_Resume.pdf" download class="btn btn-outline">📄 Download CV</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- animated stats -->
+        <!-- ✏️ UPDATE: data-target = the real numbers -->
+        <div class="stats-grid">
+          <div class="stat-card reveal">
+            <p class="stat-num" data-target="15" data-decimal="0">0</p>
+            <p class="stat-label">Projects Built</p>
+          </div>
+          <div class="stat-card reveal">
+            <p class="stat-num" data-target="2" data-decimal="0">0</p>
+            <p class="stat-label">Certificates</p>
+          </div>
+          <div class="stat-card reveal">
+            <p class="stat-num" data-target="8" data-decimal="0">0</p>
+            <p class="stat-label">Skills</p>
+          </div>
+          <div class="stat-card reveal">
+            <p class="stat-num" data-target="8.5" data-decimal="1">0</p>
+            <p class="stat-label">CGPA</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════ SKILLS ════════════════════ -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">🛠️ My Skills</span>
+          <h2 class="section-title">Technologies I <span class="gradient-text">work with</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- ✏️ UPDATE: data-width = your skill level out of 100 -->
+          <div class="skill-item reveal">
+            <div class="skill-head"><span class="skill-name">HTML5 &amp; CSS3</span><span class="skill-value">90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-head"><span class="skill-name">JavaScript</span><span class="skill-value">80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-head"><span class="skill-name">Python</span><span class="skill-value">88%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-head"><span class="skill-name">Django</span><span class="skill-value">82%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-head"><span class="skill-name">C / C++</span><span class="skill-value">75%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-head"><span class="skill-name">MySQL</span><span class="skill-value">78%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+          </div>
+        </div>
+
+        <!-- ✏️ UPDATE: additional tools / technologies -->
+        <h3 class="skills-sub reveal">Also comfortable with</h3>
+        <div class="skills-chips reveal">
+          <span class="skill-chip">Git &amp; GitHub</span>
+          <span class="skill-chip">Bootstrap</span>
+          <span class="skill-chip">Tailwind CSS</span>
+          <span class="skill-chip">React (Basics)</span>
+          <span class="skill-chip">REST APIs</span>
+          <span class="skill-chip">SQLite / PostgreSQL</span>
+          <span class="skill-chip">Linux</span>
+          <span class="skill-chip">VS Code</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════ PROJECTS ════════════════════ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">🚀 My Projects</span>
+          <h2 class="section-title">Things I have <span class="gradient-text">built</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- ✏️ PROJECT 1/5 · IntellCoders -->
+          <article class="project-card reveal">
+            <div class="project-thumb" style="--thumb: linear-gradient(135deg, #ffb347, #ff7a00);">
+              <span class="project-emoji">🌐</span>
+              <span class="project-langs">Next.js · Tailwind</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">IntellCoders — Web Agency</h3>
+              <p class="project-desc">A modern web agency website built with Next.js — showcasing services, featured projects and SEO-ready pages with fast SSR performance.</p>
+              <div class="project-tags">
+                <span>Next.js</span><span>React</span><span>Tailwind</span><span>SEO</span>
+              </div>
+              <div class="project-links">
+                <a href="https://www.intellcoders.in/" target="_blank" rel="noopener noreferrer" class="project-link">🌐 Visit Site</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ✏️ PROJECT 2/5 · Vishal MediaTech -->
+          <article class="project-card reveal">
+            <div class="project-thumb" style="--thumb: linear-gradient(135deg, #ff9933, #f45e00);">
+              <span class="project-emoji">📢</span>
+              <span class="project-langs">MERN Stack</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Vishal MediaTech — Media Platform</h3>
+              <p class="project-desc">A full-stack media technology platform built with the MERN stack — MongoDB, Express.js, React and Node.js powering dynamic content.</p>
+              <div class="project-tags">
+                <span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span>
+              </div>
+              <div class="project-links">
+                <a href="https://vishalmediatech.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">🌐 Visit Site</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ✏️ PROJECT 3/5 · Ganga Tours -->
+          <article class="project-card reveal">
+            <div class="project-thumb" style="--thumb: linear-gradient(135deg, #ffc46b, #ff9933);">
+              <span class="project-emoji">🚌</span>
+              <span class="project-langs">Next.js</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Ganga Tours — Travel &amp; Tour</h3>
+              <p class="project-desc">A travel &amp; tour website built with Next.js — destination showcases, tour packages and a smooth booking experience.</p>
+              <div class="project-tags">
+                <span>Next.js</span><span>React</span><span>Tailwind</span><span>Responsive</span>
+              </div>
+              <div class="project-links">
+                <a href="https://ganga-tours-intellcoders.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">🌐 Visit Site</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ✏️ PROJECT 4/5 · Bhavishya Darshan -->
+          <article class="project-card reveal">
+            <div class="project-thumb" style="--thumb: linear-gradient(135deg, #ffa94d, #e8590c);">
+              <span class="project-emoji">🔮</span>
+              <span class="project-langs">Laravel · PHP</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Bhavishya Darshan — Web Store</h3>
+              <p class="project-desc">A complete web store built with Laravel — dynamic catalog, user dashboard, secure payment flow and an easy-to-manage admin panel.</p>
+              <div class="project-tags">
+                <span>Laravel</span><span>PHP</span><span>MySQL</span><span>Blade</span>
+              </div>
+              <div class="project-links">
+                <a href="https://bhavishyadarshan.store/" target="_blank" rel="noopener noreferrer" class="project-link">🌐 Visit Site</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ✏️ PROJECT 5/5 · DigiFlow (featured, full width) -->
+          <article class="project-card featured reveal">
+            <div class="project-thumb" style="--thumb: linear-gradient(135deg, #ffd8a8, #ff9933);">
+              <span class="project-emoji">⚡</span>
+              <span class="project-langs">HTML · CSS · JS</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">DigiFlow — Front-end Project</h3>
+              <p class="project-desc">A sleek, fully responsive front-end website with modern animations, smooth interactions and a pixel-perfect design — deployed on Netlify.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Netlify</span>
+              </div>
+              <div class="project-links">
+                <a href="https://digiflow.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">🌐 Visit Site</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- ✏️ UPDATE: GitHub link -->
+        <div class="projects-more reveal">
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="btn btn-outline">See more on GitHub →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════ EDUCATION ════════════════════ -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">🎓 Education</span>
+          <h2 class="section-title">My academic <span class="gradient-text">journey</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="timeline">
+          <!-- ✏️ UPDATE: degree, college, year, CGPA -->
+          <div class="timeline-card reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2023 — Present</span>
+              <h3 class="timeline-title">B.Tech — Computer Science &amp; Engineering</h3>
+              <p class="timeline-org">Your College / University Name</p>
+              <p class="timeline-desc">Specializing in software development with a focus on web technologies. Current CGPA: <strong>8.5</strong> / 10.</p>
+            </div>
+          </div>
+
+          <!-- ✏️ UPDATE -->
+          <div class="timeline-card reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2020 — 2023</span>
+              <h3 class="timeline-title">Diploma — Computer Engineering</h3>
+              <p class="timeline-org">Your Polytechnic College Name</p>
+              <p class="timeline-desc">Completed with <strong>88%</strong>. Built a solid base in programming, DBMS and computer networks.</p>
+            </div>
+          </div>
+
+          <!-- ✏️ UPDATE -->
+          <div class="timeline-card reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2019 — 2020</span>
+              <h3 class="timeline-title">Class 10th — CBSE</h3>
+              <p class="timeline-org">Your School Name</p>
+              <p class="timeline-desc">Scored <strong>85%</strong> in board exams.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════ CERTIFICATES & ACHIEVEMENTS ════════════════════ -->
+    <section class="section" id="certificates">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">🏆 Certificates &amp; Achievements</span>
+          <h2 class="section-title">My <span class="gradient-text">credentials</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <!-- ▼ ▼ ▼ CERTIFICATE FILES ▼ ▼ ▼
+             ✅ Cards below show your real certificates (visible images).
+             ✏️ Edit the TITLE / ORG / YEAR text to match each certificate.
+             ➕ To add another: drop the file in assets/certificates/ and
+                copy one <article class="cert-card"> block, updating the
+                two file references + title. -->
+        <div class="certs-grid">
+          <!-- ✅ CARD 1 — assets/certificates/cert2.jpeg -->
+          <article class="cert-card reveal">
+            <figure class="cert-thumb">
+              <img src="assets/certificates/cert2.jpeg"
+                   data-lightbox-img="assets/certificates/cert2.jpeg"
+                   data-lightbox-title="Certificate — edit this title" alt="Certificate">
+              <span class="cert-placeholder">🗂️ Add certificate</span>
+            </figure>
+            <div class="cert-body">
+              <h4 class="cert-title">Certificate — edit this title ✏️</h4>
+              <p class="cert-meta"><span class="cert-org">Issuer / Org name</span> • <span class="cert-year">Year</span></p>
+            </div>
+          </article>
+
+          <!-- ✅ CARD 2 — assets/certificates/forage.jpeg -->
+          <article class="cert-card reveal">
+            <figure class="cert-thumb">
+              <img src="assets/certificates/forage.jpeg"
+                   data-lightbox-img="assets/certificates/forage.jpeg"
+                   data-lightbox-title="Virtual Experience Program — Forage" alt="Certificate">
+              <span class="cert-placeholder">🗂️ Add certificate</span>
+            </figure>
+            <div class="cert-body">
+              <h4 class="cert-title">Virtual Experience Program ✏️</h4>
+              <p class="cert-meta"><span class="cert-org">Forage</span> • <span class="cert-year">Year</span></p>
+            </div>
+          </article>
+        </div>
+
+        <!-- ✏️ additional achievements -->
+        <div class="achievements reveal">
+          <h3 class="skills-sub">Achievements &amp; highlights</h3>
+          <ul class="achievement-list">
+            <li>🏅 Solved <strong>200+</strong> problems on LeetCode / HackerRank</li>
+            <li>🥇 Won 1st prize in a college-level <strong>Web Designing</strong> competition</li>
+            <li>🏆 Certified in <strong>Python &amp; Django</strong> from recognized online platforms</li>
+            <li>🎓 Active member of the college <strong>Coding Club</strong> &amp; event volunteer</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════ EXPERIENCE / INTERNSHIPS ════════════════════ -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">💼 Experience &amp; Internships</span>
+          <h2 class="section-title">Where I have <span class="gradient-text">worked</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="exp-grid">
+          <!-- ✏️ INTERNSHIP 1 -->
+          <article class="exp-card reveal">
+            <div class="exp-top">
+              <span class="exp-icon">💻</span>
+              <span class="exp-badge">Internship</span>
+            </div>
+            <h3 class="exp-role">Web Development Intern</h3>
+            <p class="exp-company">Company Name · <span class="exp-date">Jun 2024 — Aug 2024</span></p>
+            <ul class="exp-points">
+              <li>Built and styled responsive pages with HTML, CSS &amp; JavaScript.</li>
+              <li>Converted Figma designs to pixel-perfect web pages.</li>
+              <li>Collaborated using Git/GitHub in a 3-member team.</li>
+            </ul>
+          </article>
+
+          <!-- ✏️ INTERNSHIP 2 -->
+          <article class="exp-card reveal">
+            <div class="exp-top">
+              <span class="exp-icon">🐍</span>
+              <span class="exp-badge">Training</span>
+            </div>
+            <h3 class="exp-role">Python / Django Trainee</h3>
+            <p class="exp-company">Company / Institute Name · <span class="exp-date">Jan 2024 — Mar 2024</span></p>
+            <ul class="exp-points">
+              <li>Learned Django ORM, templates, forms and authentication.</li>
+              <li>Built a mini e-commerce project end-to-end.</li>
+              <li>Practiced REST API basics with Django REST Framework.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════ CONTACT ════════════════════ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">📧 Contact Me</span>
+          <h2 class="section-title">Let's <span class="gradient-text">talk</span></h2>
+          <div class="title-underline"></div>
+          <p class="section-sub">Have a project idea, internship opportunity, or just want to say hi? My inbox is always open.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <!-- ✏️ UPDATE: your email -->
+            <a href="mailto:your.email@gmail.com" class="contact-card reveal">
+              <span class="contact-icon">📧</span>
+              <div>
+                <h4>Email</h4>
+                <p>your.email@gmail.com</p>
+              </div>
+            </a>
+            <!-- ✏️ UPDATE: your phone -->
+            <a href="tel:+919999999999" class="contact-card reveal">
+              <span class="contact-icon">📱</span>
+              <div>
+                <h4>Phone</h4>
+                <p>+91 99999 99999</p>
+              </div>
+            </a>
+            <!-- ✏️ UPDATE: your location -->
+            <div class="contact-card reveal">
+              <span class="contact-icon">📍</span>
+              <div>
+                <h4>Location</h4>
+                <p>India</p>
+              </div>
+            </div>
+            <div class="contact-socials reveal">
+              <!-- ✏️ UPDATE: your GitHub / LinkedIn links -->
+              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">GH</a>
+              <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">in</a>
+              <a href="assets/resume/Krishna_Resume.pdf" download class="btn btn-gradient btn-sm">📄 Resume</a>
+            </div>
+          </div>
+
+          <!-- ✏️ IMPORTANT: replace your-email@gmail.com below to receive messages -->
+          <form class="contact-form reveal" id="contactForm" action="https://formsubmit.co/your-email@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New message from your portfolio!" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cfName">Your Name</label>
+                <input type="text" id="cfName" name="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="cfEmail">Your Email</label>
+                <input type="email" id="cfEmail" name="email" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cfSubject">Subject</label>
+              <input type="text" id="cfSubject" name="subject" placeholder="Internship opportunity" />
+            </div>
+            <div class="form-group">
+              <label for="cfMessage">Message</label>
+              <textarea id="cfMessage" name="message" rows="5" placeholder="Hi Krishna, let's build something great together..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-gradient btn-block">📨 Send Message</button>
+            <p class="form-status" id="formStatus" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ════════════════════ CV — hidden resume used by every "Download" button ════════════════════
+       ✏️ UPDATE the details here — clicking any "Download Resume / CV" button builds a
+       single-page A4 PDF automatically from this block (js/download-cv.js). -->
+  <div id="cv-print" aria-hidden="true">
+    <div class="cv-page">
+      <header class="cv-header">
+        <div class="cv-id">
+          <h1 class="cv-name">Krishna</h1>
+          <p class="cv-role">B.Tech CSE Student · Web Developer</p>
+        </div>
+        <div class="cv-contacts">
+          <p>✉️ your.email@gmail.com</p>
+          <p>📞 +91 99999 9999</p>
+          <p>📍 India</p>
+          <p>🔗 github.com/yourusername · linkedin.com/in/yourusername</p>
+        </div>
+      </header>
+
+      <section class="cv-sec">
+        <h2 class="cv-sec-title">Profile Summary</h2>
+        <p class="cv-text">Final-year B.Tech Computer Science &amp; Engineering student with a Diploma in Computer Engineering. Passionate about building responsive websites and full-stack applications with Python, Django, JavaScript and modern frameworks. Open to internships and entry-level developer roles.</p>
+      </section>
+
+      <div class="cv-cols">
+        <div class="cv-col-left">
+          <section class="cv-sec">
+            <h2 class="cv-sec-title">Education</h2>
+            <div class="cv-block">
+              <p class="cv-block-title">B.Tech — Computer Science &amp; Engineering</p>
+              <p class="cv-block-meta">Your College / University · 2023 – Present · CGPA 8.5</p>
+            </div>
+            <div class="cv-block">
+              <p class="cv-block-title">Diploma — Computer Engineering</p>
+              <p class="cv-block-meta">Your Polytechnic · 2020 – 2023 · 88%</p>
+            </div>
+            <div class="cv-block">
+              <p class="cv-block-title">Class X — CBSE</p>
+              <p class="cv-block-meta">Your School · 2019 – 2020 · 85%</p>
+            </div>
+          </section>
+
+          <section class="cv-sec">
+            <h2 class="cv-sec-title">Skills</h2>
+            <ul class="cv-list">
+              <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript, Bootstrap, Tailwind</li>
+              <li><strong>Backend:</strong> Python, Django, Laravel, REST APIs</li>
+              <li><strong>Database:</strong> MySQL, SQLite</li>
+              <li><strong>Frameworks:</strong> Next.js, React (basics), Node.js</li>
+              <li><strong>Tools:</strong> Git &amp; GitHub, VS Code, Linux</li>
+            </ul>
+          </section>
+
+          <section class="cv-sec">
+            <h2 class="cv-sec-title">Certificates</h2>
+            <ul class="cv-list">
+              <li>OOP with Python — Coursera · 2024</li>
+              <li>Django Web Framework — Coursera · 2024</li>
+              <li>JavaScript Essentials — Cisco · 2023</li>
+              <li>Java Programming — Great Learning · 2023</li>
+              <li>SQL &amp; Database Design — NPTEL · 2024</li>
+              <li>AI &amp; ML Basics — Infosys · 2024</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="cv-col-right">
+          <section class="cv-sec">
+            <h2 class="cv-sec-title">Projects</h2>
+            <div class="cv-block">
+              <p class="cv-block-title">IntellCoders — Web Agency <span class="cv-tag">Next.js · Tailwind</span></p>
+              <p class="cv-block-meta">Responsive agency site with services &amp; SSR pages — intellcoders.in</p>
+            </div>
+            <div class="cv-block">
+              <p class="cv-block-title">Vishal MediaTech <span class="cv-tag">MERN Stack</span></p>
+              <p class="cv-block-meta">Full-stack media platform with MongoDB, Express, React &amp; Node — vishalmediatech.vercel.app</p>
+            </div>
+            <div class="cv-block">
+              <p class="cv-block-title">Ganga Tours <span class="cv-tag">Next.js</span></p>
+              <p class="cv-block-meta">Travel tour &amp; booking website — ganga-tours-intellcoders.vercel.app</p>
+            </div>
+            <div class="cv-block">
+              <p class="cv-block-title">Bhavishya Darshan — Web Store <span class="cv-tag">Laravel</span></p>
+              <p class="cv-block-meta">E-commerce store with catalog &amp; payment flow — bhavishyadarshan.store</p>
+            </div>
+            <div class="cv-block">
+              <p class="cv-block-title">DigiFlow — Front-end <span class="cv-tag">HTML · CSS · JS</span></p>
+              <p class="cv-block-meta">Animated responsive front-end site — digiflow.netlify.app</p>
+            </div>
+          </section>
+
+          <section class="cv-sec">
+            <h2 class="cv-sec-title">Experience &amp; Internships</h2>
+            <div class="cv-block">
+              <p class="cv-block-title">Web Development Intern <span class="cv-tag">Jun – Aug 2024</span></p>
+              <p class="cv-block-meta">Company Name — built responsive pages, converted designs, used Git in a team.</p>
+            </div>
+            <div class="cv-block">
+              <p class="cv-block-title">Python / Django Trainee <span class="cv-tag">Jan – Mar 2024</span></p>
+              <p class="cv-block-meta">Institute Name — Django ORM, auth &amp; REST API basics, mini e-commerce project.</p>
+            </div>
+          </section>
+
+          <section class="cv-sec">
+            <h2 class="cv-sec-title">Achievements</h2>
+            <ul class="cv-list">
+              <li>Solved 200+ DSA problems on LeetCode / HackerRank</li>
+              <li>1st prize in college Web Designing competition</li>
+              <li>Active member of the college Coding Club</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ════════════════════ FOOTER ════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">Krishna<span class="logo-dot">.dev</span></a>
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="footer-socials">
+        <!-- ✏️ UPDATE: same GitHub / LinkedIn links as in the hero -->
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 2.87-.39c.97 0 1.94.13 2.87.39 2.18-1.49 3.14-1.18 3.14-1.18.63 1.59.24 2.76.12 3.05.73.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.66.41.36.78 1.06.78 2.14v3.16c0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.79-1.75-1.75s.79-1.75 1.75-1.75 1.75.79 1.75 1.75 1.75-.78 1.75-1.75 1.75zm13.5 12.27h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-11h2.88v1.5h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.6v6.46z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Krishna · Crafted with <span class="heart">❤</span> &amp; lots of coffee ☕</p>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-top" id="backTop" aria-label="Back to top" title="Back to top">↑</button>
+
+  <!-- Certificate lightbox (image preview) -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Certificate preview">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous certificate">‹</button>
+    <figure class="lightbox-figure">
+      <img id="lightboxImg" src="" alt="Certificate preview" />
+      <figcaption class="lightbox-caption" id="lightboxCaption"></figcaption>
+    </figure>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next certificate">›</button>
+  </div>
+
+  <script src="js/script.js"></script>
+
+  <!-- Single-page PDF generation for the "Download Resume" buttons
+       (html2canvas + jsPDF load from CDN — needs internet on first download) -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script defer src="js/download-cv.js"></script>
+</body>
+</html>
