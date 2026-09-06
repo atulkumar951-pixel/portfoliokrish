@@ -205,7 +205,7 @@
         }
       } catch (err) {
         formStatus.className = 'form-status error';
-        formStatus.textContent = "⚠️ Could not send — make sure you've set your email in index.html and activated FormSubmit.";
+        formStatus.textContent = "⚠️ Could not send right now — please email me directly at krishnand00011@gmail.com";
       }
       btn.disabled = false;
       btn.textContent = original;

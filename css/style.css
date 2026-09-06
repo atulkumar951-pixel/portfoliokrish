@@ -955,14 +955,6 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.25; font-weigh
 .footer-links a { color: var(--muted); font-size: 0.9rem; transition: color 0.25s ease; }
 .footer-links a:hover { color: var(--accent); }
 .footer-socials { display: flex; gap: 12px; }
-.footer-socials .social-btn-text {
-  padding: 0 16px;
-  font-family: var(--font-display);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.3px;
-  width: auto;
-}
 .footer-bottom {
   border-top: 1px solid var(--border);
   padding: 20px 24px;
