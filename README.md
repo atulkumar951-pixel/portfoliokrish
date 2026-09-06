@@ -38,7 +38,7 @@ Search for these comments in `index.html` — every one starts with `<!-- ✏️
 | **Stats (projects / CGPA)** | About | Edit `data-target` values on the `.stat-num` elements |
 | **Skill percentages** | Skills | Edit the `data-width="90"` values under each skill |
 | **Extra tech chips** | Skills | Edit the `.skill-chip` spans |
-| **Projects** | Projects | Copy/paste a whole `<article class="project-card">` block, change title, text and tags |
+| **Projects** | Projects | Copy/paste a whole `<article class="project-item">` block (list row), change number, title, text and tags |
 | **Education details** | Education | Edit the 3 `.timeline-card` blocks (degree, college name, CGPA/%) |
 | **Certificates** | Certificates | Put images in `assets/certificates/` and edit the titles near each card |
 | **Achievements** | Certificates | Edit the `.achievement` items |
