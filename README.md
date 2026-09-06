@@ -32,7 +32,7 @@ Search for these comments in `index.html` — every one starts with `<!-- ✏️
 | **Typing words** | Home | Open `js/script.js`, edit the `roles` array (line ~32) |
 | **Your intro text** | Home | Edit the `<p class="hero-desc">` paragraph |
 | **Photo (the person)** | Home | Replace `assets/profile/photo.jpg` with your photo. If no photo is added, a gradient "K" shows automatically |
-| **GitHub & LinkedIn links** | Home + Footer | Replace `https://github.com/yourusername` and `…linkedin.com/in/yourusername` (2 places each) |
+| **GitHub & LinkedIn links** | Done ✅ | Already set — `github.com/kn345870-dotcom`, `linkedin.com/in/krishna-nand-0222aa434`, Instagram `@krishnand_0011` + `@intellcoders.in` |
 | **About text** | About | Edit the two `<p class="about-p">` paragraphs |
 | **Email / phone / location** | About + Contact | Replace `your.email@gmail.com`, `+91 99999 99999`, "India" |
 | **Stats (projects / CGPA)** | About | Edit `data-target` values on the `.stat-num` elements |
@@ -114,17 +114,17 @@ python -m http.server 8000
 then open http://localhost:8000
 
 **Free deploy — GitHub Pages (recommended):**
-1. Create a repo on GitHub named `yourusername.github.io`.
+1. Create a repo on GitHub named `kn345870-dotcom.github.io`.
 2. In PowerShell (from the project folder):
 ```bash
 git init
 git add .
 git commit -m "Portfolio"
 git branch -M main
-git remote add origin https://github.com/yourusername/yourusername.github.io.git
+git remote add origin https://github.com/kn345870-dotcom/kn345870-dotcom.github.io.git
 git push -u origin main
 ```
-3. Wait ~1 minute → your site is live at `https://yourusername.github.io`.
+3. Wait ~1 minute → your site is live at `https://kn345870-dotcom.github.io`.
 
 **Free deploy — Netlify (no git needed):** drag-and-drop the whole folder at https://app.netlify.com/drop
 
